@@ -1,29 +1,29 @@
 import './App.css'
 
+import cLogo from './assets/C.png'
+
 import { useEffect, useState } from 'react'
 
 function App() {
 
-  const [keyframes, setKeyframes] = useState(null);
-
-  useEffect(() => {
-    const rules = document.styleSheets[1].cssRules[1];
-    setKeyframes(rules);
-    console.log(rules);
-  }, [])
+  const [selectIndex, setSelectIndex] = useState(0);
 
   return (
     <>
-      <div id="test"></div>
-      <button id="btn" onClick={() => {
-        if (keyframes) {
-          console.log(keyframes.findRule('50%'));
-          keyframes.deleteRule('50%');
-          console.log(keyframes);
-          keyframes.appendRule('50% {left:100px; background:#000;}');
-          console.log(keyframes);
-        }
-      }}>更換動畫內容</button>
+      <div className="container">
+        <div className={"circle" + (selectIndex === 0 ? " circle_selected" : "")} onClick={() => { setSelectIndex(0) }} />
+        <div className="line"></div>
+        <div className={"circle" + (selectIndex === 1 ? " circle_selected" : "")} onClick={() => { setSelectIndex(1) }} />
+        <div className="line"></div>
+        <div className={"circle" + (selectIndex === 2 ? " circle_selected" : "")} onClick={() => { setSelectIndex(2) }} />
+        <div className="line"></div>
+        <div className={"circle" + (selectIndex === 3 ? " circle_selected" : "")} onClick={() => { setSelectIndex(3) }} />
+        <div className="line"></div>
+        <div className={"circle" + (selectIndex === 4 ? " circle_selected" : "")} onClick={() => { setSelectIndex(4) }} />
+        <div className="line"></div>
+        <div className={"circle" + (selectIndex === 5 ? " circle_selected" : "")} onClick={() => { setSelectIndex(5) }} />
+      </div>
+
     </>
   )
 }
