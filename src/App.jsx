@@ -1,30 +1,25 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-
-import cLogo from './assets/C.png'
-
-import { useEffect, useState } from 'react'
+import Page1 from './pages/Page1'
+import Page2 from './pages/Page2'
+import Page3 from './pages/Page3'
+import Page4 from './pages/Page4'
+import Page5 from './pages/Page5'
+import Page6 from './pages/Page6'
 
 function App() {
 
-  const [selectIndex, setSelectIndex] = useState(0);
-
   return (
-    <>
-      <div className="container">
-        <div className={"circle" + (selectIndex === 0 ? " circle_selected" : "")} onClick={() => { setSelectIndex(0) }} />
-        <div className="line"></div>
-        <div className={"circle" + (selectIndex === 1 ? " circle_selected" : "")} onClick={() => { setSelectIndex(1) }} />
-        <div className="line"></div>
-        <div className={"circle" + (selectIndex === 2 ? " circle_selected" : "")} onClick={() => { setSelectIndex(2) }} />
-        <div className="line"></div>
-        <div className={"circle" + (selectIndex === 3 ? " circle_selected" : "")} onClick={() => { setSelectIndex(3) }} />
-        <div className="line"></div>
-        <div className={"circle" + (selectIndex === 4 ? " circle_selected" : "")} onClick={() => { setSelectIndex(4) }} />
-        <div className="line"></div>
-        <div className={"circle" + (selectIndex === 5 ? " circle_selected" : "")} onClick={() => { setSelectIndex(5) }} />
-      </div>
-
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/1" element={<Page1 />} />
+        <Route path="/2" element={<Page2 />} />
+        <Route path="/3" element={<Page3 />} />
+        <Route path="/4" element={<Page4 />} />
+        <Route path="/5" element={<Page5 />} />
+        <Route path="/6" element={<Page6 />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
