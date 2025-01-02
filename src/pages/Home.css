@@ -1,0 +1,62 @@
+.home-background {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../assets/karina-formanova-rainforest-animation.gif');
+    background-size: cover;
+    background-position: center;
+}
+
+.home-title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home-play {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.black-screen {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.fadeout {
+    animation-name: fadeout-anim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeout-anim {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (min-width:767.5px) {
+    .home-title {
+        width: fit-content;
+    }
+    .home-play {
+        width: fit-content;
+    }
+}
+
+@media (max-width:767.5px) {
+    .home-title {
+        width: 85%;
+    }
+    .home-play {
+        width: 15%;
+    }
+}

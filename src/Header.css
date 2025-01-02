@@ -16,7 +16,7 @@
     color: white;
 }
 
-@media (min-width:768px) {
+@media (min-width:767.5px) {
     .header {
         height: 6em;
         flex-direction: row;
@@ -33,7 +33,7 @@
     }
 }
 
-@media (max-width:767px) {
+@media (max-width:767.5px) {
     .header {
         height: 10%;
         flex-direction: column;

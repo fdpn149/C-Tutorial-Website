@@ -1,0 +1,22 @@
+.black-screen {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.fadein {
+    animation-name: fadein-anim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    background-color: white;
+}
+
+@keyframes fadein-anim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
