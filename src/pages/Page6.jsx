@@ -29,7 +29,7 @@ function Page6() {
 
     useEffect(() => {
         if (step > maxStep)
-            navigate('/6?step=18');
+            navigate('/7?step=0');
         if (step < 0)
             navigate('/5?step=16');
     }, [searchParams]);
