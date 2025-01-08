@@ -15,7 +15,7 @@ function Page4() {
         <>
             <Page title='字元資料型態' stepAdd={stepAdd} stepSub={stepSub}>
                 <div className='box'>
-                    <table className='table'>
+                    <table className='table' rules='cols'>
                         <thead>
                             <tr>
                                 <th>範圍(2ᴺ)</th>
@@ -41,7 +41,7 @@ function Page4() {
                             </tr>
                         </tbody>
                     </table>
-                    <table>
+                    <table rules='cols'>
                         <thead>
                             <tr>
                                 <th>範圍(2ᴺ)</th>

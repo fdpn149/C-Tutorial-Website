@@ -15,7 +15,7 @@ function Page1() {
                     <li className={showStatus(step, 1)}>分為「有號數(含負數)」與「無號數」兩種</li>
                 </ul>
                 <div className='box'>
-                    <table className='table'>
+                    <table className='table' rules='cols'>
                         <thead>
                             <tr>
                                 <th className={showStatus(step, 2)}>範圍(2ᴺ)</th>
@@ -41,7 +41,7 @@ function Page1() {
                             </tr>
                         </tbody>
                     </table>
-                    <table>
+                    <table rules='cols'>
                         <thead>
                             <tr>
                                 <th className={showStatus(step, 4)}>範圍(2ᴺ)</th>

@@ -15,7 +15,7 @@ function Page2() {
         <>
             <Page title='定義宣告變數' stepAdd={stepAdd} stepSub={stepSub}>
                 <div className='box'>
-                    <table className='table'>
+                    <table className='table' rules='cols'>
                         <thead>
                             <tr>
                                 <th>範圍(2ᴺ)</th>
@@ -41,7 +41,7 @@ function Page2() {
                             </tr>
                         </tbody>
                     </table>
-                    <table>
+                    <table rules='cols'>
                         <thead>
                             <tr>
                                 <th>範圍(2ᴺ)</th>

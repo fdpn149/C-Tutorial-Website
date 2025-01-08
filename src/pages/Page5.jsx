@@ -19,7 +19,7 @@ function Page5() {
         <>
             <Page title='變數的儲存' stepAdd={stepAdd} stepSub={stepSub}>
                 <div className='box'>
-                    <table className='table'>
+                    <table className='table' rules='cols'>
                         <thead>
                             <tr>
                                 <th>範圍(2ᴺ)</th>
@@ -45,7 +45,7 @@ function Page5() {
                             </tr>
                         </tbody>
                     </table>
-                    <table>
+                    <table rules='cols'>
                         <thead>
                             <tr>
                                 <th>範圍(2ᴺ)</th>
