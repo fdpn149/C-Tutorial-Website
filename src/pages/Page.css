@@ -15,6 +15,21 @@
     flex-wrap: wrap;
 }
 
+.example {
+    padding-left: 1em;
+}
+
+.katex {
+    text-align: start !important;
+    font-family: "LXGW WenKai TC" !important;
+    font-size: 1.1em !important;
+}
+
+.mathnormal {
+    font-family: "LXGW WenKai TC" !important;
+    font-size: 1.1em !important;
+}
+
 table {
     margin: 1em;
     box-shadow: 0.3em 0.3em 1em 0 #ccc;
@@ -25,7 +40,7 @@ table {
 }
 
 th {
-    background-color: #5C6BBF;
+    background-color: #5C6BBF;  /*7.7-4.7/11.5*/
     color: white;
     padding: 0.3em;
 }

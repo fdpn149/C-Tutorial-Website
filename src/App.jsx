@@ -16,6 +16,7 @@ import Page13 from './pages/Page13'
 import Page14 from './pages/Page14'
 import Page15 from './pages/Page15'
 import Page16 from './pages/Page16'
+import Page17 from './pages/Page17'
 import NotFound from './pages/NotFound'
 import Home from './pages/Home'
 
@@ -41,6 +42,8 @@ function App() {
         <Route path='/14' element={<Page14 />} />
         <Route path='/15' element={<Page15 />} />
         <Route path='/16' element={<Page16 />} />
+        <Route path='/16' element={<Page16 />} />
+        <Route path='/17' element={<Page17 />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </HashRouter>
